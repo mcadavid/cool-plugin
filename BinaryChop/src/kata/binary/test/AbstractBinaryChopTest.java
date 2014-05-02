@@ -34,7 +34,8 @@ public abstract class AbstractBinaryChopTest {
 				{ new int[] { 1, 3, 5, 7 }, 4, -1 }, //
 				{ new int[] { 1, 3, 5, 7 }, 6, -1 }, //
 				{ new int[] { 1, 3, 5, 7 }, 8, -1 }, //
-				{ new int[] { 1, 3, 5, 7 }, 8, -1 } //
+				{ new int[] { 1, 3, 5, 7 }, 8, -1 },//
+				{ new int[] { 1, 3, 5, 7, 9 }, 7, 3 } //
 				});
 	}
 
