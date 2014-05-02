@@ -1,7 +1,7 @@
 package kata.binary;
 
-public class BinaryIterativeChop {
-
+public class BinaryIterativeChop extends AbstractBinaryChop {
+	@Override
 	public int chop(int value, int[] list) {
 		if (list == null || list.length == 0) {
 			return -1;

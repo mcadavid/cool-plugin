@@ -1,6 +1,8 @@
 package kata.binary;
 
-public class BinaryChopRecursiveUsingOrder extends AbstractBinaryChop {
+import java.util.Arrays;
+
+public class BinaryChopRecursive extends AbstractBinaryChop {
 
 	private int[] list = null;
 
@@ -26,11 +28,14 @@ public class BinaryChopRecursiveUsingOrder extends AbstractBinaryChop {
 			return index;
 		}
 
-		if (value < list[index]) {
+		int[] newArray = Arrays.copyOfRange(list, left, index);
+
+		if (convertIntArrayToList(newArray).contains(value)) {
 			return isContainedInArray(value, index, left, index - 1, foundIndex);
 		} else {
 			return isContainedInArray(value, index, index + 1, right, foundIndex);
 		}
 
 	}
+
 }

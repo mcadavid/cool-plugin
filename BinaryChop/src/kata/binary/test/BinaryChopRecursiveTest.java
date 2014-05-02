@@ -1,7 +1,7 @@
 package kata.binary.test;
 
 import static org.junit.Assert.assertEquals;
-import kata.binary.BinaryRecursiveChop;
+import kata.binary.BinaryChopRecursive;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +16,7 @@ public class BinaryChopRecursiveTest extends AbstractBinaryChopTest {
 
 	@Test
 	public void testBinaryIsCalled() {
-		assertEquals(expectedIndex, new BinaryRecursiveChop().chop(value, source));
+		assertEquals(expectedIndex, new BinaryChopRecursive().chop(value, source));
 	}
 
 }

@@ -2,8 +2,8 @@ package kata.binary;
 
 import java.util.Arrays;
 
-public class BinaryRecursiveChop {
-
+public class BinaryRecursiveChopFirstTry extends AbstractBinaryChop {
+	@Override
 	public int chop(int valueToSearch, int[] list) {
 		if (list == null || list.length == 0) {
 			return -1;

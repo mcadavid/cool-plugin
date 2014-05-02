@@ -1,11 +1,9 @@
 package kata.binary;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-public class BinaryNewListsIterativeChop {
-
+public class BinaryNewListsIterativeChop extends AbstractBinaryChop {
+	@Override
 	public int chop(int value, int[] list) {
 		if (list == null || list.length == 0) {
 			return -1;
@@ -37,14 +35,6 @@ public class BinaryNewListsIterativeChop {
 		} else {
 			return -1;
 		}
-	}
-
-	public List<Integer> convertIntArrayToList(int[] array) {
-		List<Integer> newList = new ArrayList<>();
-		for (int i = 0; i < array.length; i++) {
-			newList.add(array[i]);
-		}
-		return newList;
 	}
 
 }

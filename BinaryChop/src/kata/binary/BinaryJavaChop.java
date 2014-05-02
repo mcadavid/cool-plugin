@@ -2,8 +2,8 @@ package kata.binary;
 
 import java.util.Arrays;
 
-public class BinaryJavaChop {
-
+public class BinaryJavaChop extends AbstractBinaryChop {
+	@Override
 	public int chop(int value, int[] source) {
 		if (source == null) {
 			return -1;
