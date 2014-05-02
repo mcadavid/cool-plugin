@@ -17,22 +17,19 @@ public class BinaryChopRecursiveUsingOrder {
 
 	private int isContainedInArray(int value, int index, int left, int right, int foundIndex) {
 
-		if (left <= right && value != list[index]) {
-			index = (right + left) / 2;
-
-			if (value < list[index]) {
-				foundIndex = isContainedInArray(value, index, left, index - 1, foundIndex);
-			} else {
-				foundIndex = isContainedInArray(value, index, index + 1, right, foundIndex);
-			}
-		}
-
-		if (value == list[index]) {
-			return index;
-		} else if (foundIndex != -1) {
-			return foundIndex;
-		} else {
+		index = (right + left) / 2;
+		if (left > right) {
 			return -1;
 		}
+		if (value == list[index]) {
+			return index;
+		}
+
+		if (value < list[index]) {
+			return isContainedInArray(value, index, left, index - 1, foundIndex);
+		} else {
+			return isContainedInArray(value, index, index + 1, right, foundIndex);
+		}
+
 	}
 }
