@@ -16,7 +16,7 @@ public class BinaryChopIterativeTest extends AbstractBinaryChopTest {
 
 	@Test
 	public void test() {
-		assertEquals(expectedIndex, new BinaryIterativeChop().chop(what, source));
+		assertEquals(expectedIndex, new BinaryIterativeChop().chop(value, source));
 	}
 
 }

@@ -7,13 +7,13 @@ import org.junit.runners.Parameterized.Parameters;
 public abstract class AbstractBinaryChopTest {
 
 	protected int[] source;
-	protected int what;
+	protected int value;
 	protected int expectedIndex;
 
-	public AbstractBinaryChopTest(int[] source, int what, int index) {
+	public AbstractBinaryChopTest(int[] source, int value, int expectedIndex) {
 		this.source = source;
-		this.what = what;
-		this.expectedIndex = index;
+		this.value = value;
+		this.expectedIndex = expectedIndex;
 	}
 
 	@Parameters(name = "{index}: binaryChop({1})={2}")

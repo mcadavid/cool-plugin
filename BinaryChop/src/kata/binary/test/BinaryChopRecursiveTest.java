@@ -16,7 +16,7 @@ public class BinaryChopRecursiveTest extends AbstractBinaryChopTest {
 
 	@Test
 	public void testBinaryIsCalled() {
-		assertEquals(expectedIndex, new BinaryRecursiveChop().chop(what, source));
+		assertEquals(expectedIndex, new BinaryRecursiveChop().chop(value, source));
 	}
 
 }
