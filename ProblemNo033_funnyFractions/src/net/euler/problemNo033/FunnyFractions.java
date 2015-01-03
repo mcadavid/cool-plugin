@@ -1,4 +1,4 @@
-package net.euler.problemNo032;
+package net.euler.problemNo033;
 
 import java.math.BigInteger;
 
