@@ -17,20 +17,20 @@ import org.junit.runners.Parameterized.Parameters;
 public class CalculateNumberPossibilitiesWithCoinsTest {
 
 	private int amount;
-	private int expectedNumberOfResponsabilities;
+	private int expectedNumberOfPosibilities;
 
 	CalculateNumberPossibilitiesWithCoins calculator;
 
 	public CalculateNumberPossibilitiesWithCoinsTest(int amount, int expectedNumberOfResponsabilities) {
 		super();
 		this.amount = amount;
-		this.expectedNumberOfResponsabilities = expectedNumberOfResponsabilities;
+		this.expectedNumberOfPosibilities = expectedNumberOfResponsabilities;
 	}
 
 	@Parameters
 	public static Collection<Object[]> data() throws IOException {
 
-		Object[][] cases = { { 1, 1 }, { 2, 2 }, { 3, 2 }, { 5, 4 }, { 10, 0 } };
+		Object[][] cases = { { 1, 1 }, { 2, 2 }, { 3, 2 }, { 5, 4 }, { 10, 11 }, { 200, 73682 } };
 
 		return Arrays.asList(cases);
 	}
@@ -42,8 +42,7 @@ public class CalculateNumberPossibilitiesWithCoinsTest {
 
 	@Test
 	public void testComputePossibilitiesForGivenPences() {
-		System.out.println("next one");
-		Assert.assertEquals(expectedNumberOfResponsabilities, calculator.computePossibilitiesForAmountInPences(amount));
+		Assert.assertEquals(expectedNumberOfPosibilities, calculator.computePossibilitiesForAmountInPences(amount));
 	}
 
 }

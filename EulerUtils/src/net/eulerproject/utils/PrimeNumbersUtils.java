@@ -76,7 +76,7 @@ public class PrimeNumbersUtils {
 			}
 		} catch (Throwable e) {
 			e.printStackTrace();
-			throw new RuntimeException(e.getMessage());
+			// throw new RuntimeException(e.getMessage());
 		}
 	}
 
