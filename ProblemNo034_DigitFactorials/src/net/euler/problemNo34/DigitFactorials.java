@@ -9,7 +9,7 @@ public class DigitFactorials {
 		int bigsum = 0;
 		int factorial = 3;
 
-		while (factorial < 1000000) {
+		while (factorial < 10000000) {
 			sum = 0;
 			char[] digits = (factorial + "").toCharArray();
 
